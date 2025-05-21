@@ -699,7 +699,7 @@ def main():
             draw_ptr()
             
             blit_text(screen, f'Steps: {steps}', (400, 20), size=30)
-            blit_text(screen, f'Time: {int(elapsed_time)}s', (400, 50), size=30)  # Display timer
+            blit_text(screen, f'Time: {int(elapsed_time)}s', (50, 20), size=30)  # Display timer at top left
             player_text_rect = blit_text(screen, f'Player: {player_id}', (700, 20), size=24)  # Display player name and get rect
             draw_settings_button()  # Show settings button
             
