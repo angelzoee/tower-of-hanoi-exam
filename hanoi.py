@@ -680,8 +680,10 @@ def main():
     # Main game loop and management
     while True:  # Outer loop to handle returning to menu
         # Call menu screen
+        global steps
         game_done = False
         steps = 0
+
         menu_screen()
         instructions_screen()  # Show instructions after menu
         make_disks()
